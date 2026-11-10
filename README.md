@@ -5,7 +5,9 @@ On **CORD-19**, a corpus of more than 400,000 scientific articles on COVID-19, w
 whole NLP pipeline: extracting the text, splitting it into tokens, learning word vectors, and
 checking what those vectors have understood about biomedical language.
 
-> Team project, **DSI Summer School 2025, Imperial College London**.
+> 🏆 **Best Natural Language Processing Project** at the Data Science & AI Summer School 2025,
+> Imperial College London, awarded to the team that developed the best-performing word
+> representations for biomedical applications.
 
 <p>
   <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white">
@@ -26,6 +28,7 @@ checking what those vectors have understood about biomedical language.
 
 | | |
 | --- | --- |
+| **Recognition** | Best NLP Project among the teams of the Data Science & AI Summer School 2025 (Imperial College London, Data Science Institute). |
 | **Question** | How should biomedical text be tokenized, and which methods learn useful word representations from it? |
 | **Data** | [CORD-19](https://www.semanticscholar.org/cord19) (Allen Institute for AI): ~425,000 JSON files of scientific articles on COVID-19 and related coronaviruses. |
 | **Approach** | Parsing of the full corpus; 4 tokenizers compared (`split()`, NLTK, SciSpaCy, subword/BPE, including a BPE trained on the corpus); 3 kinds of word representations (N-gram co-occurrence + SVD, skip-gram with negative sampling in PyTorch, contextual BERT embeddings); exploration with t-SNE, k-means, co-occurrence networks and cosine similarity. |
@@ -79,7 +82,7 @@ appear most often within 5 words of "covid" or "coronavirus" are *disease*, *res
 
 ![Cosine similarity between "covid", "coronavirus" and their closest entities](docs/images/covid-similarity.png)
 
-**But the signal is still weak.** The cosine similarities stay low (mean 0.26), some
+**There is room to grow.** The cosine similarities stay low (mean 0.26), some
 neighbours are noise, and most random-word clusters have no clear meaning. This is what we
 expected from vectors trained on samples of the corpus: the pipeline works end to end, and
 scaling up the training data is the obvious next step.
@@ -129,7 +132,9 @@ described above.
 
 ## Team
 
-Team project carried out at the DSI Summer School 2025, Imperial College London.
+Team project carried out at the Data Science & AI Summer School (21 July – 1 August 2025),
+organised by the Data Science Institute of Imperial College London. The project received
+the **Best Natural Language Processing Project** award.
 
 The CORD-19 dataset is published by the Allen Institute for AI and its partners; see the
 [CORD-19 terms of use](https://www.semanticscholar.org/cord19/download).
