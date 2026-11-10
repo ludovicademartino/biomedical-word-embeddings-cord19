@@ -1,0 +1,14 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+networkx
+tqdm
+torch
+transformers
+tokenizers
+nltk
+spacy
+scispacy
+jupyter
